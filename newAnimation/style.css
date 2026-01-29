@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+font-family: "Figtree", sans-serif;
+}
+ html, body {
+ width: 100%;
+ height: 100%;
+ font-family: "Figtree", sans-serif;
+}
+.hero-section {
+    padding: 200px 50px 100px;
+    position: relative;
+    background-color: #000;
+    background-image: url("./bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    min-height: 100vh;
+}
+
+.hero-section .left, 
+.hero-section .right {
+    width: 50%;
+    position: relative;
+}
+
+.hero-section .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+.hero-section .sub_box {
+    display: inline-flex;
+    padding: 10px 20px;
+    gap: 10px;
+    border-radius: var(--radius-m, 10px);
+    border: 1px solid var(--Neutral-Grey-700, #29333a);
+    background: rgb(21 27 32 / .2);
+    backdrop-filter: blur(15px);
+    margin-bottom: 12px;
+}
+
+.hero-section .sub_box .sub_content {
+   color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.hero-section .banner-title{
+        color: #FFF;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    font-size: 50px;
+}
+
+.hero-section  .banner-des {
+    color: #EAEEF0;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 24px;
+}
+
+.hero-section .primary-btn {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.6;
+    padding: 13px 31px;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    position: relative;
+    z-index: 2;
+    background-color: #000;
+}
+.hero-section .secondary-btn {
+color: #0d1011;
+    text-align: center;
+    padding: 13px 31px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    background: #FFF;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section .right  .hotspots-logos {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero-section .right  .hotspots-logos .logo {
+    position: absolute;
+    will-change: transform;
+}
+
+
+.hero-section .right .hotspots-logos .logo.hsbc {
+    left: 10%;
+    bottom: 110%;
+}
+
+.hero-section .right .hotspots-logos .logo.apple-pay {
+    right: 40%;
+    bottom: 107%;
+}
+
+.hero-section .right .hotspots-logos .logo.monzo {
+    right: 10%;
+    bottom: 110%;
+}
+
+.hero-section .right  .hotspots-logos .logo.lloyds {
+    left: 2%;
+    bottom: 70%;
+}
+
+.hero-section .right .hotspots-logos .logo.visa {
+    left: 0%;
+    bottom: 30%;
+}
+
+.hero-section .right .hotspots-logos .logo.mastercard {
+    right: 0%;
+    bottom: 70%;
+}
+
+.hero-section .right .hotspots-logos .logo.gpay {
+    right: -5%;
+    bottom: 30%;
+}
+
+.hero-section .right .hotspots-logos .logo.rect1 {
+    left: 12%;
+    bottom: 93%;
+}
+
+.hero-section .right  .hotspots-logos .logo.rect2 {
+    right: 5%;
+    bottom: 57%;
+}
+.hero-section .right img {
+    position: relative;
+    z-index: 2;
+}
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
